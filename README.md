@@ -36,12 +36,11 @@ Notes:
      coconuts (4):
            holy_grail.txt: 2, 3, 87, 123
         
-CptS 481, Fall 2018 2
-maudling (4):
-      episode19.txt: 23
-      episode20.txt: 45(2), 74
-romanes (3):
-      brian.txt: 65, 66, 67
+     maudling (4):
+           episode19.txt: 23
+           episode20.txt: 45(2), 74
+     romanes (3):
+           brian.txt: 65, 66, 67
 Notes:
 • concord must import from and use the concordance module you turn in for the first part unchanged. concord will need to adapt concordance’s output to do what you want to do.
 • The words must occur in alphabetical order.
