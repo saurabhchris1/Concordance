@@ -1,3 +1,26 @@
+### Installing
+
+For Mac and Linux users
+
+```
+Clone the repositery
+```
+
+then
+
+```
+Open the terminal on this folder
+
+```
+
+write the following comand
+
+```
+for 1st question write: mac$ python3 concordance.py test.txt 
+for 2nd question write: mac$ python3 concord.py test1.txt test2.txt
+
+```
+
 # Concordance
 
 1. [ 50 points ] Write a function concordance(f, unique=True) which reads a stream (opened file) f and produces a concordance: a dictionary keyed by every word in the stream. The value associated with each key is a list whose elements are the numbers of the lines within the stream on which the name appears. Lines are numbered starting at one. There is one entry in the sequence for each instance of the word. The output of concordance() does not involve the name of the input stream, if it even has one (e.g. f could, for instance, be sys.stdin).
