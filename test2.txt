@@ -1,0 +1,4 @@
+This is my file for checking the concordance
+The words must occur in alphabetical order.
+Within each word listing, the file names must be in alphabetical order.
+Within each file name for each word listing, the line numbers must be increasing.
