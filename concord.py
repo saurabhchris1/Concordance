@@ -13,7 +13,6 @@ def file_concord(file_name):
     
     return test1
     
-
 def concord_final(f1, f2):
     dict_final = {}
     for key in f1:
@@ -47,6 +46,7 @@ def linenumbercombined(dictonary):
                 final_string = final_string + ", " +  str(k) + "(" + str(v) + ")" 
     return final_string
 
+
 def concord(file1, file2):
     
     file1_concord = file_concord(file1)
@@ -56,12 +56,20 @@ def concord(file1, file2):
     z = dict(sorted(m.items()))
     
     for k,v in z.items():
-        print(k, "(",(len(v[0]) - 1) + (len(v[1]) - 1), ") :")
-        a = linenumbercombined(dict(Counter(v[0][:-1] )) ) 
-        b = linenumbercombined(dict(Counter(v[1][:-1] )) ) 
-        print("   ", v[0][-1],": ", a )
-        print("   ", v[1][-1],": ", b)
+        if isinstance(v[0], list):
+            print(k, "(",(len(v[0]) - 1) + (len(v[1]) - 1), ") :")
+            a = linenumbercombined(dict(Counter(v[0][:-1] )) ) 
+            b = linenumbercombined(dict(Counter(v[1][:-1] )) ) 
+            print("   ", v[0][-1],": ", a )
+            print("   ", v[1][-1],": ", b)
+            
+        else:
+            print(k, "(",(len(v) - 1), ") :")
+            a = linenumbercombined(dict(Counter(v[:-1] )) ) 
+            print("   ", v[-1],": ", a )
+            
 
 
 if __name__ == "__main__":
     concord(f1, f2)
+
