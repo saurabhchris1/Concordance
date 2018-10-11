@@ -1,0 +1,17 @@
+ 1: Let's see if the word will-o'-the-wisp is indexed properly.
+ 2: 
+ 3: "Gadzooks!", 'Gadzooks!', and Gadzooks! should all get the same
+ 4: entry, and without quotes.
+ 5: 
+ 6: All instances of caseless, Caseless, and CASELESS should be treated
+ 7: identically as the same word, regardless of whether "unique" is true
+ 8: or not.
+ 9: 
+10: Tomorrow and tomorrow and tomorrow creeps on in this petty pace, but
+11: the word "tomorrow" should only be counted once on the previous line
+12: if "unique" is true.
+13: 
+14: Numbers like 42 should not be treated as words.
+15: 
+16: Count seven instances in spam, spam, spam, spam, spam, spam, and spam
+17: if unique is false and one if it is true.

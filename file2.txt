@@ -1,0 +1,4 @@
+ 1: This file is for testing "concord" and contains much more arbitrary
+ 2: text than the first one, but some of the words (e.g. spam) appear in
+ 3: both files.  Note that unique should be false for concord so
+ 4: that multiple instances can be counted.
