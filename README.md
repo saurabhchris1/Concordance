@@ -17,7 +17,7 @@ write the following comand
 
 ```
 for 1st question write: mac$ python3 concordance.py test.txt 
-for 2nd question write: mac$ python3 concord.py test1.txt test2.txt
+for 2nd question write: mac$ python3 concord.py file1.txt file2.txt
 
 ```
 
