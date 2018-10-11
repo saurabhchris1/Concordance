@@ -8,7 +8,7 @@ punctuationmiddle = ["[", "]", "(", ")", "{", "}", "<", ">", \
          ":", ";", ",", "`", "\"",  ".", \
          "|", "\\", "?", "/", "!", "_", "@", \
          "\#", "$", "%", "^", "&", "*", "+", "~", "=", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
-         
+
 def check(word):
     newword = ""
     for alpha in word:
@@ -25,9 +25,14 @@ def removepunc(line):
     data1 = line.split()
     word_list = []
     for word in data1:
-    
         if len(word) == 1 and word[0] in punctuations:
             continue
+        elif len(word) == 2 and word[0]:
+            continue
+            
+        elif len(word) == 3 and word[0]:
+            continue
+            
         
         elif word[0] in punctuations:
             word = word[1:]
@@ -39,10 +44,14 @@ def removepunc(line):
         x = check(word)
         word_list.append(x)
     return word_list
+    
+    
+       
+    
 
 def concordance(file, unique):
     if unique == True:
-        with open('test.txt') as fp:
+        with open(file) as fp:
             lines = fp.read().split("\n")
         line_count = 1 
         word_dict = {}
@@ -58,7 +67,7 @@ def concordance(file, unique):
         return word_dict
     else:
         
-        with open('test.txt') as fp:
+        with open(file) as fp:
             lines = fp.read().split("\n")
         line_count = 1 
         word_dict = {}
